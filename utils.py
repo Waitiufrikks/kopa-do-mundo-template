@@ -18,12 +18,3 @@ def data_processing(team):
 
     if team["titles"] > len(total_years_cup) - total_years_cup.index(team_first_cup):
         raise ImpossibleTitlesError("impossible to have more titles than disputed cups")
-
-
-data = {
-    "name": "França",
-    "titles": 4,
-    "top_scorer": "Zidane",
-    "fifa_code": "FRA",
-    "first_cup": "2000-10-18",
-}
